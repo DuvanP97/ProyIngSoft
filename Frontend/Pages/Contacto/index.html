@@ -20,7 +20,7 @@
         <div class="container-login100">
             <div class="wrap-login100">
                 <form class="login100-form validate-form">
-                    <span class="login100-form-title p-b-43">Contacto</span>
+                    <!-- <span class="login100-form-title p-b-43">Contacto</span> -->
                     <span class="login100-form-title p-b-43">Envianos un Mensaje</span>
                     <div class="wrap-input100 validate-input">
                         <input class="input100" type="text" placeholder="Nombre" name="nombre">
@@ -30,11 +30,12 @@
                         <input class="input100" type="text" placeholder="Email" name="email">
                         <span class="focus-input100">&nbsp &nbsp Email</span>
                     </div>
-                    <div class="wrap-input100 validate-input">
-                        <input class="input100" type="text" placeholder="Mensaje" name="mensaje">
-                        <span class="focus-input100">&nbsp &nbsp Mensaje</span>
+                    <div class="wrap-input100 validate-input" data-validate="required message" style="height:200px;">
+                        <textarea class="input100" placeholder="Digite su mensaje" type="text" name="message" cols="30"
+                            rows="10"></textarea>
+                        <span class="focus-input100">&nbsp &nbsp Digite su mensaje</span>
                     </div>
-                    <div class="container-login100-form-btn">
+                    <div class=" container-login100-form-btn">
                         <button href="../Dashboard/index.html" class="login100-form-btn">Enviar</button>
                     </div>
                 </form>
