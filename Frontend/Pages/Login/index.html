@@ -1,10 +1,15 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="../../Assets/Img/Login/icons/icono.png"/>
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="icon" type="image/png" href="../../Assets/Img/Login/icons/icono.png" />
 	<link rel="stylesheet" type="text/css" href="../../Assets/fonts/Login/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../../Assets/fonts/Login/Linearicons-Free-v1.0.0/icon-font.min.css">
 	<link rel="stylesheet" type="text/css" href="../../Assets/Css/Login/util.css">
@@ -16,26 +21,28 @@
 			<div class="wrap-login100">
 				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-43">Login</span>
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
 						<input class="input100" type="text" placeholder="Email" name="email">
-                        <span class="focus-input100">&nbsp &nbsp Email</span>
-						
+						<span class="focus-input100">&nbsp &nbsp Email</span>
+
 					</div>
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
 						<input class="input100" type="password" placeholder="Contraseña" name="pass">
-                        <span class="focus-input100">&nbsp &nbsp Contraseña</span>
-						
+						<span class="focus-input100">&nbsp &nbsp Contraseña</span>
+
 					</div>
 					<div class="flex-sb-m w-full p-t-3 p-b-32">
 						<div class="contact100-form-checkbox">
-							<a href="../Recovery/Index.html" class="txt1">¿No recuerdas tu contraseña y/o usuario?<br></a>
+							<a href="../Recovery/ndex.html" class="txt1">¿No recuerdas tu contraseña y/o
+								usuario?<br></a>
 						</div>
 						<div>
-							<a href="../Contacto/Index.html" class="txt1">Contacto</a>
+							<a href="#contacto_container" class="txt1">Contacto</a>
 						</div>
 					</div>
 					<div class="container-login100-form-btn">
-						<button href="../Dashboard/index.html" class="login100-form-btn"><a href="../Dashboard/index.html" class="txt1">...</a>
+						<button href="../Dashboard/index.html" class="login100-form-btn"><a
+								href="../Dashboard/index.html" class="txt1">...</a>
 							Login
 						</button>
 					</div>
@@ -45,44 +52,75 @@
 			</div>
 		</div>
 	</div>
-</body>
-<footer class="footer-area">
+	</body>
+	<footer class="footer-area">
 		<div class="container">
 			<div class="row justify-content-between">
-				<div class="col-sm-6 col-md-4 col-xl-3">
+				<div class="col-sm-7">
+					<!--- col-sm-6 col-md-4 col-xl-3 --->
 					<div class="single-footer-widget footer_1">
 						<h4>Para recordar</h4>
-						<p>Segun lo establecido por la ley 30 de 1992, la formación académico profesional de pregrado, prepara a los estudiantes para 
-							el desempeno de ocupaciones, para el ejercicio de una profesion o disciplina determinada, de naturaleza tecnologica o cientÃ­fica 
-							o en el area de estudio y culmina con la realizacion de un Trabajo de Grado.</p>
+						<p>
+							Segun lo establecido por la ley 30 de 1992, la formación académico profesional de pregrado,
+							prepara a los estudiantes para
+							el desempeno de ocupaciones, para el ejercicio de una profesion o disciplina determinada, de
+							naturaleza tecnologica o cientÃ­fica
+							o en el area de estudio y culmina con la realizacion de un Trabajo de Grado.
+						</p>
 					</div>
 					<div class="single-footer-widget footer_2">
-							<h4>Importante:</h4>
-							<p>Recuerde que para ingresar en el sistema debe escribir su correo institucional y su número de cédula. </p>
-							<p>NOTA: Si aún no esta registrado, contáctese con el coordinador del comite de proyectos de grado de su programa a traves de la opción Contacto </p>
-						</div>
+						<h4>Importante:</h4>
+						<p>Recuerde que para ingresar en el sistema debe escribir su correo institucional y su número de
+							cédula. </p>
+						<p>NOTA: Si aún no esta registrado, contáctese con el coordinador del comite de proyectos de
+							grado de su programa a traves de la opción Contacto </p>
+					</div>
 				</div>
+				<div id="contacto_container" class="col-sm-5">
+					<!--- col-sm-6 col-md-4 col-xl-3 --->
+					<div class="single-footer-widget footer_2">
+						<h4>Telefonos</h4>
+						<ul>
+							<li>
+								<p>Facultad de Ingenieria: ### ### ## ##</p>
+							</li>
+							<li>
+								<p>Facultad de Derecho: ### ### ## ##</p>
+							</li>
+							<li>
+								<p>Facultad de Ciencias Humanas: ### ### ## ##</p>
+							</li>
+						</ul>
+						<h4>Correo</h4>
+						<p>unilibre@unilibre.edu.co</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="copyright_part_text text-center">
 						<div class="row">
 							<div class="col-lg-12">
-								<p class="footer-text m-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+								<p class="footer-text m-0">Copyright &copy;
+									<script>document.write(new Date().getFullYear());</script> All rights reserved
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-</footer>
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="vendor/select2/select2.min.js"></script>
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
+	</footer>
+	<script src="../../Assets/vendors/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../../Assets/vendors/animsition/js/animsition.min.js"></script>
+	<script src="../../Assets/vendors/bootstrap/js/popper.js"></script>
+	<script src="../../Assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../../Assets/vendors/select2/select2.min.js"></script>
+	<script src="../../Assets/vendors/daterangepicker/moment.min.js"></script>
+	<script src="../../Assets/vendors/daterangepicker/daterangepicker.js"></script>
+	<script src="../../Assets/vendors/countdowntime/countdowntime.js"></script>
 	<script src="../../Assets/Js/Login/main.js"></script>
+
 </html>
