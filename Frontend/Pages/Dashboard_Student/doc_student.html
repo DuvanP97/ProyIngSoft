@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="../../Assets/Css/Index Dashboard/style.css">
     <link rel="stylesheet" href="../../Assets/Css/Index Dashboard/responsive.css">
     <script src="../../Assets/Js/Index Dash/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 </head>
 
 <body>
@@ -85,7 +86,7 @@
                                     <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
                                         <div class="header-top-menu tabl-d-n">
                                             <ul class="nav navbar-nav mai-top-nav">
-                                                <li class="nav-item"><a href="#" class="nav-link">Registrar info</a>
+                                                <!-- <li class="nav-item"><a href="#" class="nav-link">Registrar info</a>
                                                 </li>
                                                 <li class="nav-item"><a href="#" class="nav-link">Gen repo</a>
                                                 </li>
@@ -94,7 +95,7 @@
                                                 <li class="nav-item"><a href="#" class="nav-link">Dir/Jur</a>
                                                 </li>
                                                 <li class="nav-item"><a href="#" class="nav-link">Ayuda</a>
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </div>
                                     </div>
@@ -105,16 +106,22 @@
                                                     <a href="#" data-toggle="dropdown" role="button"
                                                         aria-expanded="false" class="nav-link dropdown-toggle">
                                                         <img src="../../Assets/Img/Dashboard/1.jpg" alt="" />
-                                                        <span class="admin-name">Duvan Pedroza</span>
+                                                        <span class="admin-name">Usuario en Sesión</span>
                                                     </a>
                                                     <ul role="menu"
                                                         class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                        <li><a href="#"><span
+                                                        <li>
+                                                            <a href="#"><span
                                                                     class="edu-icon edu-home-admin author-log-ic"></span>Mi
-                                                                perfil</a> </li>
-                                                        <li><a href="#"><span
+                                                                perfil
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="../../Assets/PHP/Login/logica/salir.php"><span
                                                                     class="edu-icon edu-locked author-log-ic"></span>Cerrar
-                                                                sesion</a></li>
+                                                                sesion
+                                                            </a>
+                                                        </li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -274,7 +281,37 @@
                                                                     <div class="form-group">
                                                                         <p>Tipo de Documento: </p>
                                                                         <select name="titulo" class="form-control">
-                                                                            <option>Seleccione un Tipo de Documento
+                                                                            <option value="">Seleccione un Tipo de
+                                                                                Documento</option>
+                                                                            <option value="">
+                                                                                ----------------------------------
+                                                                            </option>
+                                                                            <option value="">Entrega Propuesta</option>
+                                                                            <option value="">Cancelar Propuesta</option>
+                                                                            <option value="">
+                                                                                ----------------------------------
+                                                                            </option>
+                                                                            <option value="">Entrega Ante-Proyecto
+                                                                            </option>
+                                                                            <option value="">Entrega Correcciones
+                                                                                Ante-Proyecto</option>
+                                                                            <option value="">Cancelar Ante-Proyecto
+                                                                            </option>
+                                                                            <option value="">
+                                                                                ----------------------------------
+                                                                            </option>
+                                                                            <option value="">Entrega Proyecto</option>
+                                                                            <option value="">Cancelar Proyecto</option>
+                                                                            <option value="">Renuncia al Proyecto
+                                                                            </option>
+                                                                            <option value="">Entrega Correcciones
+                                                                                Proyecto</option>
+                                                                            <option value="">
+                                                                                ----------------------------------
+                                                                            </option>
+                                                                            <option value="">Entrega Monografía</option>
+                                                                            <option value="">Prorroga</option>
+                                                                            <option value="">Solicitúd Opción de Grado
                                                                             </option>
                                                                         </select>
                                                                     </div>
@@ -303,6 +340,15 @@
                                                                     <div class="form-group">
                                                                         <p>Archivo: </p>
                                                                         <input type="file">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row" style="margin-top: 20px;">
+                                                                <div class="col-lg-12">
+                                                                    <div class="payment-adress">
+                                                                        <button type="submit"
+                                                                            class="btn btn-primary waves-effect waves-light">Registrar
+                                                                            Documento</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -389,119 +435,73 @@
                             <div class="product-payment-inner-st">
                                 <ul id="myTabedu1" class="tab-review-design">
                                     <li><a href="#">Documentos del Estudiante</a></li>
-                                    <p>Este es un Recurso para estar informado de lo que esta sucediendo en el comite,
-                                        por favor solo comentarios académicos</p>
                                 </ul>
                                 <div id="myTabContent" class="tab-content custom-product-edit">
                                     <div class="product-tab-list tab-pane fade active in" id="description">
                                         <div class="row">
-                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                                <div class="review-content-section">
-                                                    <div id="dropzone1" class="pro-ad addcoursepro">
-                                                        <form action="#"
-                                                            class="dropzone dropzone-custom needsclick add-professors"
-                                                            id="demo1-upload">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                                    <br>
-                                                                    <h4>Envianos un Comentario</h4>
-                                                                    <div class="form-group">
-                                                                        <p>Comentario:</p>
-                                                                        <input name="Comment" type="text"
-                                                                            placeholder="Comentario"
-                                                                            class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <p>Estudiante:</p>
-                                                                        <input name="Comment" type="text"
-                                                                            placeholder="Estudiante"
-                                                                            class="form-control" disabled>
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <p>Programa:</p>
-                                                                        <input name="Comment" type="text"
-                                                                            placeholder="Programa" class="form-control"
-                                                                            disabled>
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <p>Fecha:</p>
-                                                                        <input name="Comment" type="date"
-                                                                            placeholder="Programa" class="form-control"
-                                                                            disabled>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
-                                                                    <div class="payment-adress">
-                                                                        <button type="submit"
-                                                                            class="btn btn-primary waves-effect waves-light">Comentar</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                                                <div class="review-content-section">
-                                                    <div id="dropzone1" class="pro-ad addcoursepro">
-                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                            <div class="product-status-wrap">
-                                                                <h4>Comentarios</h4>
-                                                                <div class="asset-inner">
-                                                                    <table>
-                                                                        <tr>
-                                                                            <th>Titulo</th>
-                                                                            <th>Director</th>
-                                                                            <th>Tipo</th>
-                                                                            <th>Archivo</th>
-                                                                            <th>Propuesta</th>
-                                                                            <th>Editar</th>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Implementar un sistema de información
-                                                                                CRM ERP para el manejo de
-                                                                                inventarios...</td>
-                                                                            <td>Rafael Acosta</td>
-                                                                            <td>Correccion Propuesta</td>
-                                                                            <td>2019-07-23</td>
-                                                                            <td>
-                                                                                <button
-                                                                                    class="pd-setting">Descargar</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button data-toggle="tooltip"
-                                                                                    title="Edit"
-                                                                                    class="pd-setting-ed"><i
-                                                                                        class="fa fa-pencil-square-o"
-                                                                                        aria-hidden="true"></i></button>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>Implementación de software para el
-                                                                                manejo de historia clínica
-                                                                                electrónica en Bienestar Universitario
-                                                                            </td>
-                                                                            <td>Mauricio Alonso</td>
-                                                                            <td>Correccion Proyecto</td>
-                                                                            <td>2019-02-18</td>
-                                                                            <td>
-                                                                                <button
-                                                                                    class="pd-setting">Descargar</button>
-                                                                            </td>
-                                                                            <td>
-                                                                                <button data-toggle="tooltip"
-                                                                                    title="Edit"
-                                                                                    class="pd-setting-ed"><i
-                                                                                        class="fa fa-pencil-square-o"
-                                                                                        aria-hidden="true"></i></button>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="product-status-wrap">
+                                                    <div class="asset-inner">
+                                                        <table>
+                                                            <tr>
+                                                                <th>Titulo</th>
+                                                                <th>Director</th>
+                                                                <th>Tipo</th>
+                                                                <th>Archivo</th>
+                                                                <th>Propuesta</th>
+                                                                <th>Editar</th>
+                                                                <th>Ver</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Implementar un sistema de información CRM ERP para
+                                                                    el manejo de
+                                                                    inventarios...</td>
+                                                                <td>Rafael Acosta</td>
+                                                                <td>Correccion Propuesta</td>
+                                                                <td>2019-07-23</td>
+                                                                <td>
+                                                                    <button class="pd-setting">Descargar</button>
+                                                                </td>
+                                                                <td>
+                                                                    <button data-toggle="tooltip" title="Edit"
+                                                                        class="pd-setting-ed">
+                                                                        <i class="fa fa-pencil-square-o"
+                                                                            aria-hidden="true">
+                                                                        </i>
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <button data-toggle="tooltip" title="See"
+                                                                        class="pd-setting-ed btn-see">
+                                                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Implementación de software para el manejo de
+                                                                    historia clínica
+                                                                    electrónica en Bienestar Universitario</td>
+                                                                <td>Mauricio Alonso</td>
+                                                                <td>Correccion Proyecto</td>
+                                                                <td>2019-02-18</td>
+                                                                <td>
+                                                                    <button class="pd-setting">Descargar</button>
+                                                                </td>
+                                                                <td>
+                                                                    <button data-toggle="tooltip" title="Edit"
+                                                                        class="pd-setting-ed"><i
+                                                                            class="fa fa-pencil-square-o"
+                                                                            aria-hidden="true"></i></button>
+                                                                </td>
+                                                                <td>
+                                                                    <button data-toggle="tooltip" title="See"
+                                                                        class="pd-setting-ed btn-see">
+                                                                        <i class="fa fa-eye" aria-hidden="true">
+                                                                        </i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
@@ -668,6 +668,18 @@
         <script src="../../Assets/Js/Index Dash/calendar/fullcalendar-active.js"></script>
         <script src="../../Assets/Js/Index Dash/plugins.js"></script>
         <script src="../../Assets/Js/Index Dash/main.js"></script>
+
+        <!-- Codigo Temporal -->
+        <script>
+            $(".btn-see").click(function () {
+                Swal.fire({
+                    title: 'Información del Documento',
+                    html: '<div style="width: 100%; border: 1px solid black; height: 450px"></div>',
+                    confirmButtonColor: "#8B0000",
+                    footer: '<a href="#" style="color: #8B0000">Que puedo Hacer con éste Documento?</a>'
+                })
+            });
+        </script>
 </body>
 
 </html>

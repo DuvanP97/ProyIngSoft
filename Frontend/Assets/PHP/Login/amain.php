@@ -18,7 +18,7 @@ require "./logica/conexion.php";
         header("location: ../../../Pages/Dashboard");
     }
     else if ($qArray[3] === "Estudiante") {
-        header("location: ../../../Pages/Dashboard_Student");
+        header("location: ../../../Pages/Dashboard_Student/doc_student.html");
     }
 
 ?>
